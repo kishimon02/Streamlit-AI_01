@@ -35,7 +35,7 @@ if prompt:  # ユーザーが何か入力した場合
         payload = {
             "inputs": {},   # 入力を空にセット
             "query": prompt,        # プロンプトをセット
-            "response_mode": "streaming",    # レスポンスモードをブロッキング（チャットボットからの返信が出来上がってからしか返ってこない設定）にセット
+            "response_mode": "blocking",    # レスポンスモードをブロッキング（チャットボットからの返信が出来上がってからしか返ってこない設定）にセット
             "conversation_id": st.session_state.conversation_id,    # 会話IDをセット（Dify APIが会話履歴を管理するために使用）
             "user": "kishimon-01",    # ユーザーをセット（Dify APIがユーザーを識別するために使用）
             "files": []   # ファイルを空にセット

@@ -28,7 +28,7 @@ with st.chat_message("assistant"):  # AIのメッセージをチャット欄に�
     message_placeholder = st.empty()    # AIの応答を一時的に表示するための空のプレースホルダーを作成
 
     headers = {
-        'Authorization': f'Bearer {dify_api_key}',  # Dify APIのAPIキーをヘッダーにセット
+        'Authorization': Bearer {dify_api_key}',  # Dify APIのAPIキーをヘッダーにセット
         'Content-Type': 'application/json'  # コンテンツタイプをJSONにセット
     }
 

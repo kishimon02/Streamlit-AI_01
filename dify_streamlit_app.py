@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 dify_api_key = st.secrets["DIFY_API_KEY"]   # Streamlitのsecrets機能を使って、Dify APIのAPIキーを安全に取得
-url = '/workflows/run/:workflow_id'    # Dify APIのエンドポイント（APIの機能が利用できるURL）
+url = '/workflows/run/chat-messages'    # Dify APIのエンドポイント（APIの機能が利用できるURL）
 
 st.title('Kishimon AIのお悩み相談室')   # タイトルを表示
 

@@ -4,7 +4,7 @@ import streamlit as st
 dify_api_key = st.secrets["DIFY_API_KEY"]   # Streamlitのsecrets機能を使って、Dify APIのAPIキーを安全に取得
 url = 'https://api.dify.ai/v1/chat-messages'    # Dify APIのエンドポイント（APIの機能が利用できるURL）
 
-st.title('Kishimon AIのお悩み相談室')   # タイトルを表示
+st.title('ホリエモンのお悩み相談室')   # タイトルを表示
 
 if "conversation_id" not in st.session_state:   # 会話IDがセッションステートにない場合
     st.session_state.conversation_id = ""   # 空文字列をセット
@@ -16,7 +16,7 @@ for message in st.session_state.messages:   # セッションステートのメ�
     with st.chat_message(message["role"]):  # チャットメッセージを表示（ユーザーとAIのメッセージをそれぞれのロール（役割）に応じて左右どちらかに表示）
         st.markdown(message["content"]) # メッセージの内容を表示
 
-prompt = st.chat_input("Kishimon AIに何か質問してみよう!")  # チャット入力欄を表示
+prompt = st.chat_input("ホリエモンに何か質問してみよう!")  # チャット入力欄を表示
 
 if prompt:  # ユーザーが何か入力した場合
     with st.chat_message("user"):   #ユーザーのメッセージをチャット欄に表示

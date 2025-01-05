@@ -37,7 +37,7 @@ if prompt:  # ユーザーが何か入力した場合
             "query": prompt,        # プロンプトをセット
             "response_mode": "blocking",    # レスポンスモードをブロッキング（チャットボットからの返信が出来上がってからしか返ってこない設定）にセット
             "conversation_id": st.session_state.conversation_id,    # 会話IDをセット（Dify APIが会話履歴を管理するために使用）
-            "user": "kishimon-01",    # ユーザーをセット（Dify APIがユーザーを識別するために使用）
+            "user": "nobita-01",    # ユーザーをセット（Dify APIがユーザーを識別するために使用）
             "files": []   # ファイルを空にセット
         }
 
